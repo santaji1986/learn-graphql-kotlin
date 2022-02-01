@@ -1,6 +1,0 @@
-enum Currency{
-    CHF
-    USD
-    INR
-    EUR
-}

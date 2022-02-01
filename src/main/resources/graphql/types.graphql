@@ -1,0 +1,19 @@
+type BankAccount{
+    id:String!
+    client:Client!
+    currency:Currency
+}
+type Client{
+    id:String!
+    firstName:String!
+    lastName:String!
+}
+enum Currency{
+    CHF
+    USD
+    INR
+    EUR
+}
+type Query{
+    bankAccount(id:String):BankAccount
+}

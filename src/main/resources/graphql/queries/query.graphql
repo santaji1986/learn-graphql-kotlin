@@ -1,0 +1,11 @@
+query getBankAccount($id: String!) {
+    bankAccount(id:$id){
+        id
+        client {
+            id
+            firstName
+            lastName
+        }
+        currency
+    }
+}
